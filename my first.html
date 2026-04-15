@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="m_t.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-   <nav class="navbar">
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="m_t.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Website</title>
+
+    <link rel="stylesheet" href="m_t.css">
+
+</head>
+
+<body>
+<nav class="navbar">
     <div class="logo">
-        <span>My Story</span> <img src="image.jpg" alt="Logo" class="nav-logo-img"> </div>
+        <span>My Story</span>
+    </div>
     <ul class="nav-links">
         <li><a href="#about">About Me</a></li>
         <li><a href="#career">Career</a></li>
@@ -19,47 +28,54 @@
     </ul>
 </nav>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h1>About Me</h1>
-             <div class=class="image-container" onclick="toggleText('about-text')">
-            <img src="1.jpg" alt="My Village" class="profile-img" width="500" height="500">
-            <p>Welcome! This is where you can describe who you are, your passions, and what drives you every day. Use this space to give people a glimpse into your personality.</p>
+<section id="about" class="section reveal-on-scroll">
+    <div class="container">
+        <h1>About Me</h1>
+        <div class="tag-container">
+            
+            <span class="tag">History</span>
+            <span class="tag">Static website</span>
+            <span class="tag">Dynamic website</span>
+            <span class="tag">Multimedia</span>
         </div>
-        </div>
-    </section>
+        
+        <p>Welcome! This is where you can describe who you are, your passions, and what drives you every day. Use this space to give people a glimpse into your personality.</p>
+    </div>
+</section>
 
-    <section id="career" class="section gray-bg">
-        <div class="container">
-            <h1>Career</h1>
-            <p>Describe your professional journey here. You can talk about your current role, past experiences, and the skills you've developed throughout your career.</p>
+<section id="career" class="section gray-bg reveal-on-scroll">
+    <div class="container">
+        <h1>Career</h1>
+        <div class="tag-container">
+            <span class="tag">Physics</span>
+            <span class="tag">Web Development</span>
+            <span class="tag">Design</span>
         </div>
-    </section>
+        <p>Describe your professional journey here. You can talk about your current role, past experiences, and the skills you've developed throughout your career.</p>
+    </div>
+</section>
 
-    <section id="family" class="section">
+<section id="family" class="section reveal-on-scroll">
     <div class="container">
         <h1>Family & Village</h1>
-        
+        <div class="tag-container">
+            <span class="tag">Roots</span>
+            <span class="tag">Tradition</span>
+            <span class="tag">Community</span>
+        </div>
         <div class="side-by-side-layout">
             <div class="image-grid">
-                <div class="image-container" onclick="toggleText('family-text')">
+                <div class="image-container">
                     <img src="2.jfif" alt="My Family" class="profile-img" width="300" height="300">
-                    <p id="family-text" class="reveal-text">This is my family!</p>
                 </div>
-
-                <div class="image-container" onclick="toggleText('village-text')">
+                <div class="image-container">
                     <img src="images (1).jfif" alt="My Village" class="profile-img" width="300" height="300">
-                    <p id="village-text" class="reveal-text">This is my village.</p>
                 </div>
             </div>
-
             <div class="description-content">
-                <p>This section is dedicated to your roots. Share stories about your family and the village or community where you grew up. It adds a wonderful personal touch to your site.</p>
+                <p>This section is dedicated to your roots. Share stories about your family and the village or community where you grew up.</p>
             </div>
         </div>
     </div>
 </section>
-   
-
 </body>
-</html>
