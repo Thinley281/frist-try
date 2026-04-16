@@ -1,44 +1,48 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <link rel="stylesheet" href="m_t.css">
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My Personal Website</title>
-
     <link rel="stylesheet" href="m_t.css">
-
 </head>
-
 <body>
+
 <nav class="navbar">
     <div class="logo">
-        <span>My Story</span>
+        <span>My Information</span>
     </div>
     <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#career">Career</a></li>
-        <li><a href="#family">Family & Village</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Topics &#9662;</a>
+            <div class="dropdown-content">
+                <a href="#about">About Me</a>
+                <a href="#career">Career</a>
+                <a href="#family">Families & Friends</a>
+            </div>
+        </li>
+        <li><a href="#about">Home</a></li>
     </ul>
 </nav>
+
+<div class="hero-search-area">
+    <div class="search-box centered-search">
+        <input type="text" placeholder="Search for physics, coding, or village stories...">
+        <button type="submit">
+            <span class="search-icon">&#128269;</span>
+        </button>
+    </div>
+</div>
 
 <section id="about" class="section reveal-on-scroll">
     <div class="container">
         <h1>About Me</h1>
         <div class="tag-container">
-            
             <span class="tag">History</span>
             <span class="tag">Static website</span>
             <span class="tag">Dynamic website</span>
             <span class="tag">Multimedia</span>
         </div>
-        
         <p>Welcome! This is where you can describe who you are, your passions, and what drives you every day. Use this space to give people a glimpse into your personality.</p>
     </div>
 </section>
@@ -67,9 +71,15 @@
             <div class="image-grid">
                 <div class="image-container">
                     <img src="2.jfif" alt="My Family" class="profile-img" width="300" height="300">
+                    <div class="overlay">
+                        <span>Details &rarr;</span>
+                    </div>
                 </div>
                 <div class="image-container">
                     <img src="images (1).jfif" alt="My Village" class="profile-img" width="300" height="300">
+                    <div class="overlay">
+                        <span>Details &rarr;</span>
+                    </div>
                 </div>
             </div>
             <div class="description-content">
@@ -78,4 +88,6 @@
         </div>
     </div>
 </section>
+
 </body>
+</html>
